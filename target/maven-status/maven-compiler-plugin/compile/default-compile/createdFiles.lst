@@ -1,0 +1,5 @@
+model\Food.class
+model\FoodType.class
+model\OrderStatus.class
+model\Order.class
+model\Restaurant.class

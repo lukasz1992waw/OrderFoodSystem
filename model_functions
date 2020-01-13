@@ -1,0 +1,22 @@
+Klient ma możliwość złożenia zamówień (jedno zamówienia dotyczy jednej restauracji)
+Klient ma możliwość sprawdzenia listy swoich zamówień:
+	*dostarczonych
+	*niedostarczonych
+	*anulowanych
+	*wszystkich
+
+
+Restauracja ma możliwość sprawdzenia listy zamówień które jej dotyczą:
+	*dostarczonych
+	*niedostarczonych
+	*anulowanych
+	*wszystkich
+
+Restauracja ma możliwość zmiany statusu zamówienia
+Restauracja ma możliwość dodania / usuniecia jedzenia
+
+
+Klient może założyć konto.
+Restauracja może założyć konto sobie i klientowi.
+Klient może modyfikować swoje dane
+Restauracja może modyfikować dane klienta i swoje.

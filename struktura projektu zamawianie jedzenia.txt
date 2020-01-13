@@ -1,0 +1,41 @@
+Client			[DB CLIENT]
+ id 			number
+ firstName		varchar(50)
+ lastName		varchar(50)
+ address		varchar(50)
+ orders			Order       	/jeden do wielu		
+  
+
+Order			[DB ORDER]
+ id			number
+ restaurant		Restaurant 	/wiele do jednego
+ client			Client	   	/wiele do jednego
+ food	         	Food		/wiele do wielu
+ status			Status	
+ orderTime		Date	 
+
+OrderStatus		[DB ORDER_STATUS]
+ id 			number
+ status			varchar[50]		//nowe, dostarczone, anulowane
+
+
+Restaurant		[DB RESTAURANT] 
+ id			number
+ name			varchar[50]
+ food			Food		/jeden do wielu
+ orders			Order		/jeden do wielu
+
+Food			[DB FOOD]
+ id 			number
+ type			Type           					
+ amount			number
+
+FoodType		[DB FOOD_TYPE]
+ id			number
+ type			varchar[50]		
+
+
+
+
+
+

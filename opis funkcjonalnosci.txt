@@ -1,0 +1,22 @@
+Klient ma mo¿liwoœæ z³o¿enia zamówieñ (jedno zamówienia dotyczy jednej restauracji)
+Klient ma mo¿liwoœæ sprawdzenia listy swoich zamówieñ: 
+	*dostarczonych
+	*niedostarczonych
+	*anulowanych
+	*wszystkich
+
+
+Restauracja ma mo¿liwoœæ sprawdzenia listy zamówieñ które jej dotycz¹:
+	*dostarczonych
+	*niedostarczonych
+	*anulowanych
+	*wszystkich
+
+Restauracja ma mo¿liwoœæ zmiany statusu zamówienia
+Restauracja ma mo¿liwoœæ dodania / usuniecia jedzenia
+
+
+Klient mo¿e za³o¿yæ konto.
+Restauracja mo¿e za³o¿yæ konto sobie i klientowi.
+Klient mo¿e modyfikowaæ swoje dane
+Restauracja mo¿e modyfikowaæ dane klienta i swoje.
