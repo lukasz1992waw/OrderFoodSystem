@@ -1,22 +1,27 @@
-Klient ma mo¿liwoœæ z³o¿enia zamówieñ (jedno zamówienia dotyczy jednej restauracji)
-Klient ma mo¿liwoœæ sprawdzenia listy swoich zamówieñ: 
+Klient ma moï¿½liwoï¿½ï¿½ zï¿½oï¿½enia zamï¿½wieï¿½ (jedno zamï¿½wienia dotyczy jednej restauracji)
+Klient ma moï¿½liwoï¿½ï¿½ sprawdzenia listy swoich zamï¿½wieï¿½: 
 	*dostarczonych
 	*niedostarczonych
 	*anulowanych
 	*wszystkich
 
 
-Restauracja ma mo¿liwoœæ sprawdzenia listy zamówieñ które jej dotycz¹:
+Restauracja ma moï¿½liwoï¿½ï¿½ sprawdzenia listy zamï¿½wieï¿½ ktï¿½re jej dotyczï¿½:
 	*dostarczonych
 	*niedostarczonych
 	*anulowanych
 	*wszystkich
 
-Restauracja ma mo¿liwoœæ zmiany statusu zamówienia
-Restauracja ma mo¿liwoœæ dodania / usuniecia jedzenia
+Restauracja ma moï¿½liwoï¿½ï¿½ zmiany statusu zamï¿½wienia
+Restauracja ma moï¿½liwoï¿½ï¿½ dodania / usuniecia jedzenia
 
 
-Klient mo¿e za³o¿yæ konto.
-Restauracja mo¿e za³o¿yæ konto sobie i klientowi.
-Klient mo¿e modyfikowaæ swoje dane
-Restauracja mo¿e modyfikowaæ dane klienta i swoje.
+Klient moï¿½e zaï¿½oï¿½yï¿½ konto.
+Restauracja moï¿½e zaï¿½oï¿½yï¿½ konto sobie i klientowi.
+Klient moï¿½e modyfikowaï¿½ swoje dane
+Restauracja moï¿½e modyfikowaï¿½ dane klienta i swoje.
+
+
+pobieranie danych z excela
+generowanie danych do excela
+
