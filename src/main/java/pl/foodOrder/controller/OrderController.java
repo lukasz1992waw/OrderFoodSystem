@@ -1,9 +1,8 @@
 package pl.foodOrder.controller;
-
-import pl.foodOrder.model.Order;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import pl.foodOrder.model.FoodOrder;
 import pl.foodOrder.service.OrderService;
 
 import java.util.List;
@@ -19,18 +18,18 @@ public class OrderController {
     }
 
     @GetMapping("/list")
-    public ResponseEntity<List<Order>> findAll(){
+    public ResponseEntity<List<FoodOrder>> findAll(){
         return ResponseEntity.ok(orderService.findAll());
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<Order> findById(@PathVariable int id){
+    public ResponseEntity<FoodOrder> findById(@PathVariable int id){
         return ResponseEntity.ok(orderService.findById(id));
     }
 
     @DeleteMapping("delete")
-    public HttpStatus delete(@RequestBody Order order){
-        orderService.delete(order);
+    public HttpStatus delete(@RequestBody FoodOrder foodOrder){
+        orderService.delete(foodOrder);
         return HttpStatus.OK;
     }
 }

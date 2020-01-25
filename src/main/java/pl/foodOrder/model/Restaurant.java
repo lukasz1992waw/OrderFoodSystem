@@ -16,24 +16,22 @@ public class Restaurant {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-
     private String name;
 
     @OneToMany(mappedBy = "restaurant")
     @JsonManagedReference
-    private List<Food> foods = new ArrayList<>();
-
-    @OneToMany(mappedBy = "restaurant")
-    @JsonManagedReference
-    private List<Order> orders = new ArrayList<>();
+    private List<FoodOrder> foodOrders = new ArrayList<>();
 
     public Restaurant() {
     }
 
-    public Restaurant(String name, List<Food> foods, List<Order> orders) {
+    public Restaurant(String name) {
         this.name = name;
-        this.foods = foods;
-        this.orders = orders;
+    }
+
+    public Restaurant(String name, List<FoodOrder> foodOrders) {
+        this.name = name;
+        this.foodOrders = foodOrders;
     }
 
     @Override
@@ -41,8 +39,7 @@ public class Restaurant {
         return "Restaurant{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
-                ", foods=" + foods +
-                ", orders=" + orders +
+                ", orders=" + foodOrders +
                 '}';
     }
 }

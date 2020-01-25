@@ -1,10 +1,7 @@
 package pl.foodOrder.model;
-
-import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import lombok.Getter;
 import lombok.Setter;
-
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -22,16 +19,29 @@ public class Client {
 
     @OneToMany(mappedBy = "client", fetch=FetchType.EAGER)
     @JsonManagedReference
-    private List<Order> orders = new ArrayList<>();
+    private List<FoodOrder> foodOrders = new ArrayList<>();
 
     public Client() {
     }
 
-    public Client(String firstName, String lastName, String address, List<Order> orders) {
+    public Client(String firstName, String lastName, String address) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.address = address;
-        this.orders = orders;
+    }
+
+    public Client(String firstName, String lastName, String address, List<FoodOrder> foodOrders) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.address = address;
+        this.foodOrders = foodOrders;
+    }
+
+    public Client(String firstName, String lastName, String address, FoodOrder foodOrder) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.address = address;
+        this.foodOrders.add(foodOrder);
     }
 
     @Override
@@ -41,7 +51,7 @@ public class Client {
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
                 ", address='" + address + '\'' +
-                ", orders=" + orders +
+                ", orders=" + foodOrders +
                 '}';
     }
 }

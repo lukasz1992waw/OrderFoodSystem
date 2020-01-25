@@ -5,8 +5,6 @@ import lombok.Getter;
 import lombok.Setter;
 
 import javax.persistence.*;
-import java.util.ArrayList;
-import java.util.List;
 
 @Entity
 @Getter
@@ -20,23 +18,22 @@ public class Food {
     private FoodType foodType;
 
     @ManyToOne
-    @JoinColumn(name = "food_id_")
+    @JoinColumn(name = "order_id")
     @JsonManagedReference
-    private Restaurant restaurant;
-
-    @ManyToOne
-    @JoinColumn(name = "food_id")
-    @JsonManagedReference
-    private Order order;
+    private FoodOrder foodOrder;
 
     public Food() {
     }
 
-    public Food(int amount, FoodType foodType, Restaurant restaurant, Order order) {
+    public Food(int amount, FoodType foodType) {
         this.amount = amount;
         this.foodType = foodType;
-        this.restaurant = restaurant;
-        this.order = order;
+    }
+
+    public Food(int amount, FoodType foodType, Restaurant restaurant, FoodOrder foodOrder) {
+        this.amount = amount;
+        this.foodType = foodType;
+        this.foodOrder = foodOrder;
     }
 
     @Override
@@ -45,8 +42,7 @@ public class Food {
                 "id=" + id +
                 ", amount=" + amount +
                 ", foodType=" + foodType +
-                ", restaurant=" + restaurant +
-                ", orders=" + order +
+                ", orders=" + foodOrder +
                 '}';
     }
 }

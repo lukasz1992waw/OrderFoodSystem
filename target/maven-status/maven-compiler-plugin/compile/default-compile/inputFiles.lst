@@ -1,4 +1,5 @@
 C:\Users\lukas\Desktop\myFoodApp\src\main\java\pl\foodOrder\dao\OrderDAO.java
+C:\Users\lukas\Desktop\myFoodApp\src\main\java\pl\foodOrder\model\FoodOrder.java
 C:\Users\lukas\Desktop\myFoodApp\src\main\java\pl\foodOrder\dao\FoodDAO.java
 C:\Users\lukas\Desktop\myFoodApp\src\main\java\pl\foodOrder\controller\ClientController.java
 C:\Users\lukas\Desktop\myFoodApp\src\main\java\pl\foodOrder\Main.java
@@ -22,5 +23,4 @@ C:\Users\lukas\Desktop\myFoodApp\src\main\java\pl\foodOrder\controller\Restauran
 C:\Users\lukas\Desktop\myFoodApp\src\main\java\pl\foodOrder\service\ClientService.java
 C:\Users\lukas\Desktop\myFoodApp\src\main\java\pl\foodOrder\service\OrderService.java
 C:\Users\lukas\Desktop\myFoodApp\src\main\java\pl\foodOrder\model\FoodType.java
-C:\Users\lukas\Desktop\myFoodApp\src\main\java\pl\foodOrder\model\Order.java
 C:\Users\lukas\Desktop\myFoodApp\src\main\java\pl\foodOrder\service\impl\FoodServiceImpl.java

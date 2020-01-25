@@ -13,6 +13,6 @@ public class DataController {
     @Autowired
     public DataController(DataGenerator dataGenerator) {
         this.dataGenerator = dataGenerator;
-        dataGenerator.createData();
+//        dataGenerator.createData();
     }
 }

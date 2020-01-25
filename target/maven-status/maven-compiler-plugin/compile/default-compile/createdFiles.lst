@@ -15,6 +15,7 @@ pl\foodOrder\controller\SystemController.class
 pl\foodOrder\controller\ClientController.class
 pl\foodOrder\service\ClientService.class
 pl\foodOrder\service\FoodService.class
+pl\foodOrder\model\FoodOrder.class
 pl\foodOrder\controller\RestaurantController.class
 pl\foodOrder\model\Restaurant.class
 pl\foodOrder\model\FoodType.class
@@ -23,4 +24,3 @@ pl\foodOrder\service\RestaurantService.class
 pl\foodOrder\controller\FoodController.class
 pl\foodOrder\service\impl\OrderServiceImpl.class
 pl\foodOrder\dao\OrderDAO.class
-pl\foodOrder\model\Order.class
