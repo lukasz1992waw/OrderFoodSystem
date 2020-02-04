@@ -11,6 +11,11 @@ import java.util.List;
 public class ClientServiceImpl implements ClientService {
 
     ClientDAO clientDAO;
+
+    public ClientServiceImpl(ClientDAO clientDAO) {
+        this.clientDAO = clientDAO;
+    }
+
     @Override
     public Client save(Client client) {
         return clientDAO.save(client);

@@ -17,8 +17,7 @@ public class Restaurant {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String name;
-
-    @OneToMany(mappedBy = "restaurant")
+    @OneToMany(mappedBy = "restaurant", fetch=FetchType.EAGER)
     @JsonManagedReference
     private List<FoodOrder> foodOrders = new ArrayList<>();
 
@@ -32,6 +31,19 @@ public class Restaurant {
     public Restaurant(String name, List<FoodOrder> foodOrders) {
         this.name = name;
         this.foodOrders = foodOrders;
+    }
+
+    public Restaurant(String name, FoodOrder foodOrder) {
+        this.name = name;
+        this.foodOrders.add(foodOrder);
+    }
+
+    public void setFoodOrders(List<FoodOrder> foodOrders) {
+        this.foodOrders = foodOrders;
+    }
+
+    public void setFoodOrders(FoodOrder foodOrder) {
+        this.foodOrders.add(foodOrder);
     }
 
     @Override

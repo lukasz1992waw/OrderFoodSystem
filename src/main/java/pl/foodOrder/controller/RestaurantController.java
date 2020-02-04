@@ -1,5 +1,6 @@
 package pl.foodOrder.controller;
 
+import org.springframework.stereotype.Controller;
 import pl.foodOrder.model.Restaurant;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -8,7 +9,7 @@ import pl.foodOrder.service.RestaurantService;
 
 import java.util.List;
 
-@RestController
+@Controller
 @RequestMapping("/restaurant")
 public class RestaurantController {
 

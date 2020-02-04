@@ -11,4 +11,6 @@ public interface FoodService {
     Food save(Food food);
     void delete(Food food);
     List<Food> findAll();
+    List<Food> findAllByOrderId(int id);
+
 }

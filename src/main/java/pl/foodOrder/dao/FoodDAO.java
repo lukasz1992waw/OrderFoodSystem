@@ -13,4 +13,6 @@ public interface FoodDAO extends CrudRepository<Food, Integer> {
     Food save(Food food);
     void delete(Food food);
     List<Food> findAll();
+    List<Food> findAllByFoodOrder_Id(int id);
+
 }

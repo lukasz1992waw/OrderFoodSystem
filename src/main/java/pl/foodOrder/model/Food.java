@@ -1,10 +1,12 @@
 package pl.foodOrder.model;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import lombok.Getter;
 import lombok.Setter;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Getter
@@ -16,13 +18,18 @@ public class Food {
     private int amount;
     @Enumerated(value = EnumType.STRING)
     private FoodType foodType;
-
     @ManyToOne
-    @JoinColumn(name = "order_id")
-    @JsonManagedReference
+    @JoinColumn(name = "foodOrder_id")
+    @JsonBackReference
     private FoodOrder foodOrder;
 
     public Food() {
+    }
+
+    public Food(int amount, FoodType foodType, FoodOrder foodOrder) {
+        this.amount = amount;
+        this.foodType = foodType;
+        this.foodOrder= foodOrder;
     }
 
     public Food(int amount, FoodType foodType) {
@@ -30,10 +37,12 @@ public class Food {
         this.foodType = foodType;
     }
 
-    public Food(int amount, FoodType foodType, Restaurant restaurant, FoodOrder foodOrder) {
-        this.amount = amount;
-        this.foodType = foodType;
+    public void setFoodOrder(FoodOrder foodOrder) {
         this.foodOrder = foodOrder;
+    }
+
+    public void setFoodType(FoodType foodType) {
+        this.foodType = foodType;
     }
 
     @Override
@@ -42,7 +51,6 @@ public class Food {
                 "id=" + id +
                 ", amount=" + amount +
                 ", foodType=" + foodType +
-                ", orders=" + foodOrder +
                 '}';
     }
 }

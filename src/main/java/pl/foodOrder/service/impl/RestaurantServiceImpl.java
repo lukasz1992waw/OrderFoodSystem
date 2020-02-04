@@ -10,6 +10,11 @@ import java.util.List;
 @Service
 public class RestaurantServiceImpl implements RestaurantService {
     RestaurantDAO restaurantDAO;
+
+    public RestaurantServiceImpl(RestaurantDAO restaurantDAO) {
+        this.restaurantDAO = restaurantDAO;
+    }
+
     @Override
     public Restaurant save(Restaurant restaurant) {
         return restaurantDAO.save(restaurant);

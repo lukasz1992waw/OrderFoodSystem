@@ -12,6 +12,11 @@ import java.util.List;
 @Service
 public class FoodServiceImpl implements FoodService{
     FoodDAO foodDAO;
+
+    public FoodServiceImpl(FoodDAO foodDAO) {
+        this.foodDAO = foodDAO;
+    }
+
     @Override
     public Food findById(int id) {
         return foodDAO.findById(id);
@@ -30,5 +35,10 @@ public class FoodServiceImpl implements FoodService{
     @Override
     public List<Food> findAll() {
         return foodDAO.findAll();
+    }
+
+    @Override
+    public List<Food> findAllByOrderId(int id) {
+        return foodDAO.findAllByFoodOrder_Id(id);
     }
 }

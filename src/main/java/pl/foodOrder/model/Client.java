@@ -16,8 +16,7 @@ public class Client {
     private String firstName;
     private String lastName;
     private String address;
-
-    @OneToMany(mappedBy = "client", fetch=FetchType.EAGER)
+    @OneToMany(mappedBy = "client")
     @JsonManagedReference
     private List<FoodOrder> foodOrders = new ArrayList<>();
 
@@ -41,6 +40,14 @@ public class Client {
         this.firstName = firstName;
         this.lastName = lastName;
         this.address = address;
+        this.foodOrders.add(foodOrder);
+    }
+
+    public void setFoodOrders(List<FoodOrder> foodOrders) {
+        this.foodOrders = foodOrders;
+    }
+
+    public void setFoodOrders(FoodOrder foodOrder) {
         this.foodOrders.add(foodOrder);
     }
 
