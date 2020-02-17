@@ -7,7 +7,6 @@ import org.springframework.web.bind.annotation.RestController;
 import pl.foodOrder.util.DataGenerator;
 
 @Controller
-@RequestMapping("/data")
 public class DataController {
     DataGenerator dataGenerator;
 

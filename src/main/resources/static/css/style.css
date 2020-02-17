@@ -1,0 +1,52 @@
+#header {
+     text-align: center;
+     font-size: 28px;
+     color: blue;
+     margin: 20px;
+     padding: 5px;
+}
+
+.buttons {
+    color: blue;
+    display: inline-block;
+    margin: 0 auto;
+    border: 2px solid blue;
+    padding: 5px 10px;
+    margin: 5px;
+    text-align: center;
+    cursor: pointer;
+    -webkit-transition-duration: 1s;
+    transition-duration: 1s;
+}
+
+.buttons:hover {
+    background-color: blue;
+    color: white;
+}
+
+#form {
+    text-align: center;
+}
+
+#form input[type=submit] {
+    border-radius: 25px;
+    border: 2px solid blue;
+    padding: 5px 10px;
+    margin: 5px;
+    text-align: center;
+    cursor: pointer;
+    -webkit-transition-duration: 1s; /* Safari */
+    transition-duration: 1s;
+}
+#form input[type=submit]:hover {
+  background-color: blue;
+  color: white;
+}
+.result {
+    margin: 5px auto;
+    border: 1px solid blue;
+    border-radius: 25px;
+    padding: 5px;
+    color: blue;
+    width: 200px;
+}

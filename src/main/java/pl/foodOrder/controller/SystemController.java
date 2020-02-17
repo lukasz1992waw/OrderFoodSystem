@@ -7,12 +7,14 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 import pl.foodOrder.model.Client;
 
-
+@Controller
+@RequestMapping("/index")
 public class SystemController {
 
-    @RequestMapping(value = "/index", method = RequestMethod.GET)
+    @RequestMapping(value = "/start", method = RequestMethod.GET)
     public String showIndex(Model model) {
-        model.addAttribute("index", new Client());
         return "index";
     }
+
+
 }

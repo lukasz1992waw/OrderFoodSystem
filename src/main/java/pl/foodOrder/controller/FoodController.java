@@ -21,6 +21,23 @@ public class FoodController {
         this.foodService = foodService;
     }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     @GetMapping("/list")
     public ResponseEntity<List<Food>> findAll(){
         return ResponseEntity.ok(foodService.findAll());

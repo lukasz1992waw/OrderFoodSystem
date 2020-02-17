@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"/>
     <title>Food Order System</title>
-    <link rel="stylesheet" type="text/css" href="index.css">
+    <link href="../static/css/style.css" th:href="@{/css/style.css}" rel="stylesheet" />
 </head>
 <body>
 <div id="header">
     Food Order System
 </div>
 <div>
-    <a href="/findForm"  class="buttons">Wybor restauracji</a>
-    <a href="/findForm"  class="buttons">Wybor klienta</a>
-    <a href="/findForm"  class="buttons">Nowa restauracja</a>
-    <a href="/findForm"  class="buttons">Nowy klient</a>
+    <a href="/restaurant/restaurantLogin"  class="buttons">Login in as restaurant</a>
+    <a href="/client/clientLogin"  class="buttons">Login as client</a>
+    <a href="/restaurant/createRestaurant"  class="buttons">Create new restaurant account</a>
+    <a href="/client/createClient"  class="buttons">Create new client account</a>
 </div>
 </body>
 </html>
